@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bilde {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      background-color: #000;
+      gap: 9px;
+
+    }
+
+    .kv {
+      background-color: #F0F1EC;
+    }
+
+    .sarkans {
+      background-color: #E72F24;
+    }
+
+    .divi {
+      grid-column: span 3;
+    }
+    .tris {
+      grid-row: span 2;
+    }
+    .cetri {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .zils {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .sesi {
+      grid-row: span 2;
+    }
+
+    .dzeltens {
+      background-color: #F9D01E;
+    }
+
+    .melns {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bilde">
+    <div class="kv sarkans"></div>
+    <div class="kv divi"></div>
+    <div class="kv tris"></div>
+    <div class="kv cetri"></div>
+    <div class="kv zils"></div>
+    <div class="kv sesi"></div>
+    <div class="kv septini"></div>
+    <div class="kv dzeltens"></div>
+    <div class="kv melns"></div>
+  </div><!-- Write your HTML here -->
+</body>
+
+</html>
